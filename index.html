@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>javascripte</title>
+	<link href='http://fonts.googleapis.com/css?family=Mr+Dafoe' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Amaranth:700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="styles.css" />
+	<style type="text/css">
+		html {
+	background-color: #e4dfd2;
+	background-image: -webkit-radial-gradient(center 425px 45deg, circle closest-side, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0) 30%),
+		-webkit-radial-gradient(center 425px 45deg, circle closest-side, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 10%),
+		-webkit-linear-gradient(rgba(231, 228, 222, 0), rgba(231, 228, 222, 1) 150px, rgba(231, 228, 222, 1) 388px, rgba(255, 255, 255, 0) 388px, rgba(243, 239,233,1) 388px,rgba(243, 239,233,1) 390px, rgba(206,195,187,1) 390px, rgba(230,222,216,1) 990px, rgba(230,222,216,1)),
+		-webkit-linear-gradient(0pt 50% , rgba(255, 255, 255, 0.07) 50%, transparent 50%),
+		-webkit-linear-gradient(0pt 50% , rgba(255, 255, 255, 0.13) 50%, transparent 50%),
+		-webkit-linear-gradient(0pt 50% , transparent 50%, rgba(255, 255, 255, 0.17) 50%),
+		-webkit-linear-gradient(0pt 50% , transparent 50%, rgba(255, 255, 255, 0.19) 50%);
+	background-image: -moz-radial-gradient(center 425px 45deg, circle closest-side, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0) 30%),
+		-moz-radial-gradient(center 425px 45deg, circle closest-side, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 10%),
+		-moz-linear-gradient(rgba(231, 228, 222, 0), rgba(231, 228, 222, 1) 150px, rgba(231, 228, 222, 1) 388px, rgba(255, 255, 255, 0) 388px, rgba(243, 239,233,1) 388px,rgba(243, 239,233,1) 390px, rgba(206,195,187,1) 390px, rgba(230,222,216,1) 990px, rgba(230,222,216,1)), 
+		-moz-linear-gradient(0pt 50% , rgba(255, 255, 255, 0.07) 50%, transparent 50%),
+		-moz-linear-gradient(0pt 50% , rgba(255, 255, 255, 0.13) 50%, transparent 50%),
+		-moz-linear-gradient(0pt 50% , transparent 50%, rgba(255, 255, 255, 0.17) 50%),
+		-moz-linear-gradient(0pt 50% , transparent 50%, rgba(255, 255, 255, 0.19) 50%);
+	background-image: -ms-radial-gradient(center 425px 45deg, circle closest-side, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0) 30%),
+		-ms-radial-gradient(center 425px 45deg, circle closest-side, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 10%),
+		-ms-linear-gradient(rgba(231, 228, 222, 0), rgba(231, 228, 222, 1) 150px, rgba(231, 228, 222, 1) 388px, rgba(255, 255, 255, 0) 388px, rgba(243, 239,233,1) 388px,rgba(243, 239,233,1) 390px, rgba(206,195,187,1) 390px, rgba(230,222,216,1) 990px, rgba(230,222,216,1)),
+		-ms-linear-gradient(0pt 50% , rgba(255, 255, 255, 0.07) 50%, transparent 50%),
+		-ms-linear-gradient(0pt 50% , rgba(255, 255, 255, 0.13) 50%, transparent 50%),
+		-ms-linear-gradient(0pt 50% , transparent 50%, rgba(255, 255, 255, 0.17) 50%),
+		-ms-linear-gradient(0pt 50% , transparent 50%, rgba(255, 255, 255, 0.19) 50%);
+	background-image: -o-radial-gradient(center 425px 45deg, circle closest-side, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0) 30%),
+		-o-radial-gradient(center 425px 45deg, circle closest-side, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 10%),
+		-o-linear-gradient(rgba(231, 228, 222, 0), rgba(231, 228, 222, 1) 150px, rgba(231, 228, 222, 1) 388px, rgba(255, 255, 255, 0) 388px, rgba(243, 239,233,1) 388px,rgba(243, 239,233,1) 390px, rgba(206,195,187,1) 390px, rgba(230,222,216,1) 990px, rgba(230,222,216,1)),
+		-o-linear-gradient(0pt 50% , rgba(255, 255, 255, 0.07) 50%, transparent 50%),
+		-o-linear-gradient(0pt 50% , rgba(255, 255, 255, 0.13) 50%, transparent 50%),
+		-o-linear-gradient(0pt 50% , transparent 50%, rgba(255, 255, 255, 0.17) 50%),
+		-o-linear-gradient(0pt 50% , transparent 50%, rgba(255, 255, 255, 0.19) 50%);
+	background-image: radial-gradient(center 425px 45deg, circle closest-side, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0) 30%),
+		radial-gradient(center 425px 45deg, circle closest-side, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 10%),
+		linear-gradient(rgba(231, 228, 222, 0), rgba(231, 228, 222, 1) 150px, rgba(231, 228, 222, 1) 388px, rgba(255, 255, 255, 0) 388px, rgba(243, 239,233,1) 388px,rgba(243, 239,233,1) 390px, rgba(206,195,187,1) 390px, rgba(230,222,216,1) 990px, rgba(230,222,216,1)), 
+		linear-gradient(0pt 50% , rgba(255, 255, 255, 0.07) 50%, transparent 50%),
+		linear-gradient(0pt 50% , rgba(255, 255, 255, 0.13) 50%, transparent 50%),
+		linear-gradient(0pt 50% , transparent 50%, rgba(255, 255, 255, 0.17) 50%),
+		linear-gradient(0pt 50% , transparent 50%, rgba(255, 255, 255, 0.19) 50%);
+	background-size: 13px, 26px, auto, 13px, 29px, 37px, 53px;
+	min-height:100%;
+	overflow-x:hidden;
+}
+
+body {
+	width: 800px;
+	margin: 0 auto;
+	color:#777;
+}
+h1, h2 {
+	text-align:center;
+	margin-top:0;
+}
+h1 {
+	padding: 1em 0;
+	margin-left: 1.5em;
+	font-size: 2.5em;
+	font-family: 'Amaranth', Arial, Verdana, sans-serif;
+}
+h1 span {
+	display:block;
+	margin: 0.75em 0 0 -2em;
+	line-height: 1em;
+	font-size: 0.55em;
+}
+h1 .cursive {
+	margin: 0 0 0 -3em;
+	font-size: 1.1em;
+	line-height:0.5em;
+	color: #bd9b83;
+}
+figure { 
+	display: inline-block; 
+}
+a {
+	text-decoration: none;
+	border-bottom: 1px solid #bc9d88;
+	color: #8f6b51;
+}
+a:hover,
+a:focus {
+	border-bottom: 1px dashed #bc9d88;
+}
+.sread {
+	position: absolute;
+	left:-9999px;
+}
+.cursive {
+	font-family: 'Mr Dafoe', cursive;
+}
+.center {
+	text-align: center;
+}
+	</style>
+</head>
+<body>
+	<span id="sl_play" class="sl_command">&nbsp;</span>
+	<span id="sl_pause" class="sl_command">&nbsp;</span>
+	<span id="sl_i1" class="sl_command sl_i">&nbsp;</span>
+	<span id="sl_i2" class="sl_command sl_i">&nbsp;</span>
+	<span id="sl_i3" class="sl_command sl_i">&nbsp;</span>
+	<span id="sl_i4" class="sl_command sl_i">&nbsp;</span>
+	<center><H1>JAVASCRIPT</H1></center>
+		<h2>HISTOIRE</h2>
+		
+		<P>Le langage a été créé en dix jours en mai 1995 pour le compte de la Netscape Communications Corporation par Brendan Eich, qui s'est inspiré de nombreux langages, notamment de Java mais en simplifiant la syntaxe pour les débutants7.
+
+		Brendan Eich a initialement développé un langage de script côté serveur, appelé LiveScript, pour renforcer l'offre commerciale de serveur HTTP de Mosaic Communications Corporation. La sortie de LiveScript intervient à l'époque où le NCSA force Mosaic Communications Corporation à changer de nom pour devenir Netscape Communications Corporation.
+
+		Netscape travaille alors au développement d'une version orientée client de LiveScript. Quelques jours avant sa sortie, Netscape change le nom de LiveScript pour JavaScript. Sun Microsystems et Netscape étaient partenaires, et la machine virtuelle Java de plus en plus populaire. Ce changement de nom servait les intérêts des deux sociétés.
+
+		En décembre 1995, Sun et Netscape annoncent8 la sortie de JavaScript. En mars 1996, Netscape met en œuvre le moteur JavaScript dans son navigateur web Netscape Navigator 2.0. Le succès de ce navigateur contribue à l'adoption rapide de JavaScript dans le développement web orienté client. Microsoft réagit alors en développant JScript, qu'il inclut ensuite dans Internet Explorer 3.0 en août 1996 pour la sortie de son navigateur.
+
+		JavaScript est décrit comme un complément à Java dans un communiqué de presse8 commun de Netscape et Sun Microsystems, daté du 4 décembre 1995. Cette initiative a contribué à créer auprès du public une certaine confusion entre les deux langages, proches syntaxiquement mais pas du tout dans leurs concepts fondamentaux, et qui perdure encore de nos jours9.
+
+		« JavaScript » devient une marque déposée par Oracle aux États-Unis en mai 199710,11.
+
+		Netscape soumet alors JavaScript à Ecma International pour standardisation. Les travaux débutent en novembre 1996 et se terminent en juin 1997, donnant naissance à la 1re édition du standard ECMA-262 qui spécifie le langage ECMAScript. Le standard est ensuite soumis à l'ISO/CEI et publié en avril 1998 en tant que standard international ISO/CEI 16262.
+
+		Des changements rédactionnels sont apportées au standard ECMA-262 pour le conformer au standard international ISO/CEI 16262, aboutissant à la 2e édition du standard ECMA-262 en juin 1998.
+
+		La 3e édition du standard ECMA-262 introduit des expressions rationnelles plus puissantes, une amélioration de la manipulation des chaînes de caractères, de nouvelles instructions de contrôle, une gestion des exceptions avec les instructions try/catch et le formatage des nombres. Elle est publiée par Ecma International en décembre 1999 puis soumise à l'ISO/CEI qui publie le standard international ISO/CEI 16262:2002 en juin 2002. Après la publication de la 3e édition s'ensuit une adoption massive par tous les navigateurs Web.
+
+		Un travail conséquent est entrepris pour développer la 4e édition du standard ECMA-262, mais il ne sera pas achevé et cette édition ne verra jamais le jour. Cependant une partie du développement effectué sera intégrée à la 6e édition.
+
+		La 5e édition du standard ECMA-262 clarifie les ambiguïtés de la 3e édition et introduit les accesseurs, l'introspection, le contrôle des attributs, des fonctions de manipulation de tableaux supplémentaires, le support du format JSON et un mode strict pour la vérification des erreurs. Elle est publiée par Ecma International en décembre 2009 puis soumise à l'ISO/CEI qui apporte des corrections mineures et publie le standard international ISO/CEI 16262:2011 en juin 2011. L'édition 5.1 du standard ECMA-262 reprenant à l'identique le texte du standard international ISO/CEI 16262:2011 est publiée à la même date.
+
+		Bien que le développement de la 6e édition du standard ECMA-262 ait commencé officiellement en 2009, peu avant la publication de la 5e édition, sa publication en juin 2015 est en réalité l'aboutissement de 15 ans de travail depuis la publication de la 3e édition en 1999. Le but de cette 6e édition est d'apporter un meilleur support pour les applications d'envergure, la création de bibliothèques et l'utilisation d'ECMAScript comme cible de compilation pour d'autres langages. Cette édition introduit notamment les modules, les classes, la portée lexicale au niveau des blocs, les itérateurs et les générateurs, les promesses pour la programmation asynchrone, les patrons de destructuration, l'optimisation des appels terminaux, de nouvelles structures de données (tableaux associatifs, ensembles, tableaux binaires), le support de caractères Unicode supplémentaires dans les chaînes de caractères et les expressions rationnelles et la possibilité d'étendre les structures de données prédéfinies.
+
+		La 7e édition du standard ECMA-262 est la première édition issue du nouveau processus de développement ouvert et du rythme de publication annuel adoptés par le comité Ecma TC39. Un document au format texte est créé à partir de la 6e édition et est mis en ligne sur GitHub comme base de développement pour cette nouvelle édition. Après la correction de milliers de bugs et d'erreurs rédactionnelles ainsi que l'introduction de l'opérateur d'exponentiation et d'une nouvelle méthode pour les prototypes de tableaux, la 7e édition est publiée en juin 2016.
+
+		L'édition actuelle du standard ECMA-262 est la 10e édition, publiée en juin 2019.</P>
+		
+		
+		
+		 <center><h3>SECURITE</h3></center>
+		<p class="col2">.<br />
+			JavaScript et la structure DOM des pages HTML/XML fournissent un potentiel à des auteurs mal intentionnés de livrer par le web des scripts qui s'exécutent sur l'ordinateur cible de l'utilisateur du Web. Les fournisseurs de navigateurs tentent de réduire ce risque avec deux restrictions : L'une est de faire exécuter ces scripts dans un espace à part des autres données (sandbox) dans lequel seules des actions relatives au web (mouvements de souris, affichage de pixel, communications) peuvent être exécutées, sans avoir accès au système de fichier principal. Une seconde est de n'exécuter les scripts que selon les contraintes de same-origin policy : dans cet esprit, un site Web ne doit pas avoir accès aux informations telles que les noms d'utilisateur et mot de passe ou cookies reçus des autres sites visités. Les vulnérabilités de JavaScript sont bien souvent des brèches d'au moins l'un de ces deux principes.
+
+Certains sous-ensembles du langage Javascript tels que JavaScript—ADsafe ou Secure ECMAScript (SES) fournissent de plus grands niveaux de sécurité, en particulier pour les scripts créés par des tierces parties (notamment les publicités)13,14. Caja est un autre logiciel pour inclure et isoler de manière sécurisée du JavaScript et du HTML tierce partie.
+		</p>
+		
+		 <center><h3>CONCEPTE DE PROGRAMMATION</h3></center>
+		<p class="col2">Le propos de JavaScript est de manipuler de façon simple des objets, au sens informatique, fournis par une application hôte. Par exemple dans un navigateur web, un script écrit en javascript peut être utilisé pour apporter une touche interactive ou dynamique à un applicatif (page ou site web), qui sans cela serait une page statique figée. Le langage Javascript permet par exemple d'écrire des scripts pour afficher ou cacher un paragraphe, une image ou un popup, selon les interactions de l'utilisateur, ou d'informer le serveur du temps passé à lire une page.</p>
+
+		 <center><h3>VIDEO D'EXPLICATION</h3></center>
+		<p class="col2"><iframe width="731" height="411" src="https://www.youtube.com/embed/N2YAshFhLGs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+
+		<h3>ACTUALITE</h3>
+		<p>L’année 2019 prend fin et Sacha Greif et Raphaël Benitte viennent de publier leur rapport annuel sur l’état de JavaScript et de son écosystème en entier. Environ 11 millions de développeurs utiliseraient JavaScript, et bien qu'il soit difficile de trouver tout le monde et de leur demander ce qu'ils aiment dans ce langage, l'étude “State of JavaScript 2019” a interrogé plus de 21 000 développeurs JS sur leurs frameworks, outils et fonctionnalités préférés. Les résultats ont montré comment que l’écosystème JS a évolué et quels outils sont les plus utilisés en 2019.
+
+Le rapport 2019 sur l'état de JS a révélé les principaux frameworks de travail du langage, les données démographiques sur les utilisateurs et d’autres données importantes. Qu'on l'aime ou qu'on le déteste, le langage continue de gagner du terrain et son écosystème ne cesse de grandir. Il est essentiel au développement moderne et est le premier langage de programmation sur GitHub depuis 2014, le langage Python ayant pris la deuxième place cette année devançant ainsi Java. Faisons un petit tour de ce qui est ressorti du sondage cette année.</p>
+		
+		
+	</section>
+	<footer>
+	<p>FAIT PAR <a href="https://web.facebook.com/hassatou.sow.39" hreflang="fr" title="French CSS lover">SOW ASSATOU</a></p></footer>
+</body>
+</html>
